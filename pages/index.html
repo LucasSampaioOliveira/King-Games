@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="shortcut icon" href="/img/crown.png" type="image/x-icon">
+    <title>King Games Login</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <img src="/img/crown.png" alt="">
+        <div class="title-text">
+          <div class="title login">King Games</div>
+          <div class="title signup">King Games</div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Entrar</label>
+            <label for="signup" class="slide signup">Cadastrar</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="/pages/home.html" class="login">
+              <div class="field">
+                <input type="text" placeholder="E-mail" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Senha" required>
+              </div>
+              <div class="pass-link"><a href="#">Esqueceu sua senha ?</a></div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <a href="/pages/home.html"><input id="btn-entrar" type="submit" value="Entrar"></a>
+              </div>
+              <div class="signup-link">não e membro ? <a href="">Cadastre-se agora !</a></div>
+            </form>
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" placeholder="E-mail" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Senha" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Confirme a Senha" required>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input id="btn-cadastrar" type="submit" value="Cadastre-se">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    <script src="/js/login.js"></script>
+</body>
+</html>
