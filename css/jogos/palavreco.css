@@ -211,14 +211,14 @@ hr{
 
 
 .correct{
-    background-color: #6AAA6A;
+    background-color: #00b100;
     color: white;
     border-color: white;
 }
 
 
 .present{
-    background-color: #c9b458;
+    background-color: #ebc000;
     color: white;
     border-color: white;
 }
@@ -272,7 +272,9 @@ hr{
 
 
 
-
+#answer{
+    cursor: pointer;
+}
 
 
 
@@ -367,4 +369,7 @@ hr{
     text-align: right;
 }
 
+#refresh{
+    font-family: 'Fredoka One', cursive;
+}
 
