@@ -211,14 +211,14 @@ hr{
 
 
 .correct{
-    background-color: #00b100;
+    background-color: #00a100;
     color: white;
     border-color: white;
 }
 
 
 .present{
-    background-color: #ebc000;
+    background-color: #d8b000;
     color: white;
     border-color: white;
 }
@@ -280,10 +280,8 @@ hr{
 
 
 
-
 .btn {
-    background: #428bca;
-    border: #357ebd solid 1px;
+    background: #00599B;
     border-radius: 3px;
     color: #fff;
     display: inline-block;
@@ -294,9 +292,10 @@ hr{
     min-width: 60px;
     position: relative;
     transition: color .1s ease;
+    border: 5px solid #FFB743;
 }
 .btn:hover {
-    background: #357ebd;
+    background: #0079d6;
 }
 .btn.btn-big {
     font-size: 18px;
@@ -304,7 +303,7 @@ hr{
     min-width: 100px;
 }
 .btn-close {
-    color: red;
+    color: #cc0000;
     font-size: 30px;
     text-decoration: none;
     position: absolute;
@@ -312,7 +311,7 @@ hr{
     top: 0;
 }
 .btn-close:hover {
-    color: #cc0000;
+    color: #ff8282;
 }
 .modal:before {
     content: "";
@@ -339,7 +338,7 @@ hr{
     border: #333 solid 1px;
     border-radius: 5px;
     margin-left: -200px;
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: -100%;
     z-index: 11;
@@ -373,3 +372,8 @@ hr{
     font-family: 'Fredoka One', cursive;
 }
 
+
+
+@media only screen and (max-width: 600px) {
+
+  }

@@ -275,7 +275,9 @@ function update() {
             else {
                 currTile.classList.add("absent");
                 let keyTile = document.getElementById("Key" + letter);
-                keyTile.classList.add("absent")
+                if (!keyTile.classList.contains("present" || "correct")) {
+                    keyTile.classList.add("absent")
+                  }
             }
         }
     }
