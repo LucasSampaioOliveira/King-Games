@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/jogos/palavreco.css">
+    <link rel="stylesheet" href="/css/jogos/ninja.css">
     <link rel="shortcut icon" href="/img/crown.png" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <title>King Games Palavreco</title>
+    <title>King Games Home</title>
 </head>
 <body>
+    
+
+
 
     <section class="navigation">
         <div class="nav-container">
           <div class="brand">
-            <i><img src="/img/crown.png" alt="" style="width: 2%;" class="crown"></i>
+            <i><img src="/img/crown.png" alt="" style="width: 2%;"></i>
             <a href="/pages/home.html" id="title-nav">King Games</a>
-            <i><img src="/img/crown.png" alt="" style="width: 2%;" class="crown"></i>
+            <i><img src="/img/crown.png" alt="" style="width: 2%;"></i>
           </div>
           <nav>
             <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
@@ -63,58 +70,27 @@
         </div>
       </section>
 
-    <section id="palavreco">
 
-      
-<div class="wrap">
-  <a href="#modal-one" class="btn btn-big">Como Jogar</a>
-  <button id="refresh" class="btn btn-big">Reiniciar o jogo</button>
-</div>
- 
-<!-- Modal -->
-<div class="modal" id="modal-one" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-header">
-      <h1>Descubra a palavra certa em 6 tentativas. Depois de cada tentativa, as peças monstram o quão perto você está da solução.</h1>
-      <a href="#" class="btn-close" aria-hidden="true">×</a>
-    </div>
-    <div class="modal-body">
-      <img src="/img/gosta.png" style="width: 100%;">
-      <h2>A letra  <img src="/img/g.png">  faz parte da palavra e está na posição correta.</h2>
+
+
+
+
+
+
+
+    <div class="container">
+        <div id="score"></div>
+        <canvas id="game" width="375" height="375"></canvas>
+        <div id="introduction">Para jogar, click e segure e crie sua rampa</div>
+        <div id="perfect">DOUBLE SCORE</div>
+        <button id="restart">RESTART</button>
+      </div>
       
 
-      <img src="/img/gesto.png" style="width: 100%;">
-      <h2>A letra  <img src="/img/e.png">  faz parte da palavra mas em outra posição.</h2>
-      
+      <div id="youtube-card">
+        How to create a Stick Hero game with JavaScript and HTML Canvas
+      </div>
 
-      <img src="/img/fecha.png" style="width: 100%;">
-      <h2>A letra  <img src="/img/e-preto.png">  não faz parte da palavra.</h2>
-
-
-      <h3>não tem acentos nas palavras. Exemplo pode existir a palavra (VOCÊS) mas no jogo vai estar (VOCES) por motivos do jogo ser baseado no wordle americano</h3>
-      
-    </div>
-  </div>
-</div>
-<!-- /Modal -->
-
-
-        <h1 id="title">Palavreco</h1>
-        <hr>
-        <br>
-
-        <div id="board">
-
-        </div>
-
-
-        <br>
-
-        <h1 id="answer"></h1>
-
-    </section>
-
-
-      <script src="/js/jogos/palavreco.js"></script>
+    <script src="/js/jogos/ninja.js"></script>
 </body>
 </html>
