@@ -196,9 +196,9 @@ body{
   height: 120px;
   position: absolute;
   border-radius: 50%;
-  color: white;
-  background-color: red;
-  border: none;
+  color: rgb(255, 255, 255);
+  background-color: #FFB743;
+  border: 2px solid #0064ad;
   font-weight: 700;
   font-size: 1.2em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -210,11 +210,6 @@ body{
   position: absolute;
   opacity: 0;
   transition: opacity 2s;
-}
-
-#youtube,
-#youtube-card {
-  display: none;
 }
 
 @media (min-height: 425px) {
