@@ -485,14 +485,14 @@ Array.prototype.last = function () {
   function drawBackground() {
     // Draw sky
     var gradient = ctx.createLinearGradient(0, 0, 0, window.innerHeight);
-    gradient.addColorStop(0, "#fff");
+    gradient.addColorStop(0, "#FFB743");
     gradient.addColorStop(1, "#0064ad");
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
   
     // Draw hills
     drawHill(hill1BaseHeight, hill1Amplitude, hill1Stretch, "#fff");
-    drawHill(hill2BaseHeight, hill2Amplitude, hill2Stretch, "#fff");
+    drawHill(hill2BaseHeight, hill2Amplitude, hill2Stretch, "#ececec");
   
     // Desenhar árvores
     trees.forEach((tree) => drawTree(tree.x, tree.color));
